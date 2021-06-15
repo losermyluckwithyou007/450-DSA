@@ -25,7 +25,6 @@ void Sort(int A[], int n){
             case 2:
                 swap(A[mid], A[high]);
                 high--;
-                mid++;
                 break;        
         }
     }
@@ -33,7 +32,7 @@ void Sort(int A[], int n){
 
 int main(){
     
-    int  arr[]= {0, 2, 1, 2, 0};
+    int  arr[]= {0, 2, 1, 2, 0, 0, 0};
     int n = sizeof(arr)/sizeof(arr[0]);
 
     Sort(arr, n);
