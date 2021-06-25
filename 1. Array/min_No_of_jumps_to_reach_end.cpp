@@ -27,11 +27,10 @@ int No_of_jumps(int A[], int n){
             
             }
         }
-        return -1;
+    return -1;
 }
 
 int main(){
-
 
     int A[] = {1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9};
     int  n = sizeof(A)/sizeof(A[0]);
