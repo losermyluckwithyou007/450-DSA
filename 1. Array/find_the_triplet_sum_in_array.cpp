@@ -5,7 +5,7 @@ class Solution{
 
     public:
     
-    string find3Numbers(int A[], int n, int X){
+    bool find3Numbers(int A[], int n, int X){
         sort(A, A+n);
         
         int ans=0;
@@ -27,8 +27,7 @@ class Solution{
             }
         }
 
-        if(ans==1) return "Yes";
-        else return "No";
+        return ans;
     }
 };
 
