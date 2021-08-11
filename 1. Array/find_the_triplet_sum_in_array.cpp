@@ -2,10 +2,10 @@
 using namespace std;
 
 class Solution{
-    public:
 
-    string find3Numbers(int A[], int n, int X)
-    {
+    public:
+    
+    string find3Numbers(int A[], int n, int X){
         sort(A, A+n);
         
         int ans=0;
