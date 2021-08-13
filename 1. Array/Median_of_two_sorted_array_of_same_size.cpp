@@ -4,12 +4,25 @@ using namespace std;
 int getMedian(int arr1[], int arr2[], int n){
 
     vector<int>v;
-    for(int i=0;i<n;i++){
-        v.push_back(arr1[i]);
-        v.push_back(arr2[i]);
-    } 
+    int i=0;
+    int j=0;
+    while(i<n && j<n){
 
-    sort( v.begin(), v.end() );
+        if(arr1[i]<arr2[j]){
+            v.push_back(arr1[i]);
+            i++;
+        } 
+        
+        else {
+            v.push_back(arr2[j]); 
+            j++;
+        }
+    }
+    
+    for(;i<n;i++) v.push_back(arr1[i]);
+    for(;j<n;j++) v.push_back(arr2[i]);
+
+    // sort( v.begin(), v.end() );
 
     if(v.size()%2==0){
         int avg = ( v[(v.size()/2)] + v[(v.size()/2)-1] ) / 2;
