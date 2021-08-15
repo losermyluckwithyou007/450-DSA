@@ -11,21 +11,6 @@ struct Node{
     }
 };
 
-Node* detectLoop(struct Node* head){
-
-    struct Node *slow=head, *fast=head;
-
-    while(fast && fast->next!=NULL){
-
-        slow=slow->next;
-        fast=fast->next->next;
-
-        if(slow==fast) return slow;
-    }
-
-    return NULL;
-}
-
 Node *startingLoop(struct Node * head){
 
     if(head == NULL || head->next==NULL) return NULL;
@@ -74,10 +59,6 @@ int main(){
 
     if(res==NULL) cout<<"Loop does exist";
     else cout<<"Loop is starting node is "<<res->data;
-
-    Node* ans = detectLoop(head);
-
-    cout<<"\nstarting Node is "<<ans->data;
 
     return 0;
 }
