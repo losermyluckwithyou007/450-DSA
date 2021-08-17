@@ -12,7 +12,6 @@ struct Node{
 };
 
 void printList(struct Node *head){
-
     struct Node *p = head;
 
     while(p!=NULL){
