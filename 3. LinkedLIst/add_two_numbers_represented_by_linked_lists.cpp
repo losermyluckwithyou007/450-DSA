@@ -80,13 +80,13 @@ Node *addTwoList(struct Node *first ,struct Node *second){
 int main(){
     
     
-    Node* first = new Node(5);
-    first->next = new Node(6);
-    first->next->next = new Node(3);
+    Node* first = new Node(2);
+    first->next = new Node(3);
+    first->next->next = new Node(4);
     
-    Node* second = new Node(8);
+    Node* second = new Node(3);
     second->next = new Node(4);
-    second->next->next = new Node(2);
+    second->next->next = new Node(5);
 
     cout<<"First list = ";
     printList(first);
