@@ -31,8 +31,7 @@ bool searchElement(vector<vector<int>> &matrix, int target){
             
         }
         
-        return false;
-
+    return false;
 }
 
 int main()
