@@ -60,6 +60,8 @@ Node *addTwoList(struct Node *first ,struct Node *second){
 
 int main(){
     
+    // first : 1->2->3->4->6
+    // second : 2->4->6->8
     
     Node* first = new Node(1);
     first->next = new Node(2);
@@ -82,8 +84,8 @@ int main(){
 
     cout<<"\nIntersection Of two Lists = ";
 
+    // 2->4->6
     printList(ans);
     
-
     return 0;
 }
